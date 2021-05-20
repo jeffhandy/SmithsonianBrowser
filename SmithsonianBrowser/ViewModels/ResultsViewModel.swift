@@ -52,7 +52,7 @@ class ResultsViewModel: ObservableObject {
         }
         
         let url = URL(string: "\(baseURL)/category/\(catName)/search?api_key=\(apiKey)&q=\(eqUnwrapped)&rows=\(maxRecordsToReturn)&start=\(start)")
-        print(url)
+        
         guard let urlUnwrapped = url else {
             errorThrownMessage = "Error: invalid URL."
             return
