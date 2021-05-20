@@ -13,8 +13,9 @@ struct SmithsonianBrowserApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           TopContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           
         }
     }
 }
